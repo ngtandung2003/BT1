@@ -14,3 +14,7 @@ if data_file is not None:
 
   st.header('Descriptive statistics')
   st.table(df.describe())
+
+  st.header('Show data information')
+  st.write(df.info())       
+  
