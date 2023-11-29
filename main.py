@@ -22,7 +22,7 @@ if data_file is not None:
   df.info(buf = buffer)       
   st.text(buffer.getvalue())
 
-  st.header('Visualize each attribute'):
+  st.header('Visualize each attribute')
   for col in list(df.columns):
     fig, ax = plt.subplots()
     ax.hist(df[col], bins = 20)
